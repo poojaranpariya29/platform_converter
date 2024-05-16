@@ -1,6 +1,5 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:platform_converter/controller/Theme_provider.dart';
 import 'package:provider/provider.dart';
 import '../controller/platform_change_provider.dart';
 

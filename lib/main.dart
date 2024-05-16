@@ -6,8 +6,6 @@ import 'package:platform_converter/view/chat_page.dart';
 import 'package:platform_converter/view/contact_page.dart';
 import 'package:platform_converter/view/setting_page.dart';
 import 'package:provider/provider.dart';
-
-import 'controller/Theme_provider.dart';
 import 'controller/platform_change_provider.dart';
 
 void main() {
@@ -22,7 +20,6 @@ class MyApp extends StatelessWidget {
     return MultiProvider(
       providers: [
         ChangeNotifierProvider(create: (context) => platformProvider()),
-        ChangeNotifierProvider(create: (context) => ThemeProvider()),
       ],
       builder: (context, child) {
         return Consumer<platformProvider>(builder:
